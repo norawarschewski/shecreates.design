@@ -25,7 +25,7 @@ body {
   font-family: 'PT Mono', monospace;  color: #404040;
   line-height: 1.7;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   height: 100%;
 }
 
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-  text-align: center;
+  text-align: left;
 
   @include mobile {
     line-height: 1.4;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 15px;
   a {
     color: inherit;
   }
@@ -66,7 +66,7 @@ h2 {
 	.post h2::before, .post h2::after {
 	    content: "";
 	    display: inline-block;
-	    vertical-align: middle;
+	    vertical-align: left;
 	    width: 46px;
 	    height: 1px;
 	    background: rgb(192, 211, 218);
@@ -75,11 +75,11 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 15px;
   color: #222;
 }
 
@@ -135,7 +135,7 @@ table tr td :last-child {
 }*/
 
 #search-container {
-  text-align: center;
+  text-align: left;
 }
 
 #search-input {
@@ -146,7 +146,7 @@ table tr td :last-child {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 15px;
   background-color: #fff3ff;
 }
 
@@ -172,7 +172,7 @@ span[data-pullquote]:before {
   font-size: 1.3em;
   font-style: italic;
   color: green;
-  text-align: center;
+  text-align: left;
 }
 
 a {
@@ -218,7 +218,7 @@ img {
 }
 
 p > img {
-  text-align: center;
+  text-align: left;
   display: block;
   margin: 0 auto;
 }
@@ -272,7 +272,7 @@ p > img {
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -309,22 +309,20 @@ p > img {
   cursor: pointer;
   font-family: 'PT Mono', monospace;  
   font-weight: 300;
-  font-size: 28px;
+  font-size: 15px;
   letter-spacing: 1px;
   text-align: left;
 
   @include mobile {
-    text-align: center;
+    text-align: left;
   }
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
+  display: none;
 
   @include mobile {
-    margin: 3px 0;
+    display: none;
   }
 }
 
@@ -332,13 +330,13 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: 'PT Mono', monospace;  
-  font-size: 18px;
+  font-size: 15px;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   a {
@@ -375,7 +373,7 @@ nav {
     /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 15px;
     font-style: italic;
     background-color: #ede1ff;
   }
@@ -385,7 +383,7 @@ nav {
     /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 15px;
     font-style: italic;
     background-color: #ddffb5;;
   }
@@ -397,6 +395,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+	  margin-top: 0.8rem;
   }
 }
 
@@ -446,7 +445,7 @@ body:after {
 
 .post h1{
   font-family: 'PT Mono', monospace;  
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
@@ -455,7 +454,7 @@ body:after {
 
 .page h1{
   font-family: 'PT Mono', monospace;  
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
@@ -463,13 +462,13 @@ body:after {
 }
 
 .author_title{
-  text-align: center;
+  text-align: left;
   color: #939aa1;
   letter-spacing: 2px;
 }
 
 .post_date{
-  text-align: center;
+  text-align: left;
   color: #939aa1;
 }
 
@@ -593,7 +592,7 @@ Modules - reusable parts of our design
 .chip {
     display: inline-block;
     height: 32px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     color: rgba(0,0,0,.6);
     line-height: 32px;
@@ -609,8 +608,8 @@ Modules - reusable parts of our design
 }
 
 #gh-latest{
-    font-size: 16px;
-    text-align: center;		
+    font-size: 15px;
+    text-align: left;		
 }
 
 .text-link {
@@ -622,7 +621,7 @@ Modules - reusable parts of our design
 //carbon ads
 #carbonads {
   --width: 180px;
-  --font-size: 14px;
+  --font-size: 15px;
 }
 
 #carbonads {
@@ -631,7 +630,7 @@ Modules - reusable parts of our design
   overflow: hidden;
   max-width: 270px;
   border-radius: 4px;
-  text-align: center;
+  text-align: left;
   border: dashed 1px #e6e6e6;
   background-color: hsl(0, 0%, 98%);
   font-size: var(--font-size);
@@ -696,7 +695,7 @@ Modules - reusable parts of our design
 }
 
 .post-tags a {
-  font-size: 14.5px;
+  font-size: 15px;
   padding: 2px 13px;
   border: none;
   background-color: #4CAF50;
@@ -778,13 +777,13 @@ Modules - reusable parts of our design
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 11pt;
+  font-size: 15px;
 }
 
 .tinyletterForm {
   border: 1px solid #ccc;
   padding: 3px;
-  text-align: center;
+  text-align: left;
   background: #ececec;
   margin: 8px;
   border-radius: 5px;
@@ -795,7 +794,7 @@ Modules - reusable parts of our design
   text-decoration: none;
   background: #00000015;
   border: none;
-  font-size: 12px;
+  font-size: 15px;
   padding: 0px 7px;
   display: inline-block;
   border-radius: 4px;
@@ -911,7 +910,7 @@ Modules - reusable parts of our design
   color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
+  font-size: 15px;
   font-size: 0.8125rem;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -948,15 +947,15 @@ Modules - reusable parts of our design
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
+    font-size: 15px;
     font-size: 1.25rem;
   }
   .cd-timeline-content p {
-    font-size: 16px;
+    font-size: 15px;
     font-size: 1rem;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 14px;
+    font-size: 15px;
     font-size: 0.875rem;
   }
 }
@@ -980,7 +979,7 @@ Modules - reusable parts of our design
     width: 100%;
     left: 122%;
     top: 6px;
-    font-size: 16px;
+    font-size: 15px;
     font-size: 1rem;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
@@ -999,7 +998,7 @@ Modules - reusable parts of our design
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
     right: 122%;
-    text-align: right;
+    text-align: left;
   }
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;
