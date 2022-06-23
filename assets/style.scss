@@ -392,10 +392,15 @@ nav {
     margin-top: 10px;
   }
 
+  .read_more:before {
+    content: "&#8986;";
+    margin-right: 5px;
+}
+	
   .read-more {
     text-transform: normal;
     font-size: 15px;
-	  margin-top: 0.8rem;
+    margin-top: 0.8rem;
   }
 }
 
