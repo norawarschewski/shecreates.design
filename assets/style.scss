@@ -393,7 +393,7 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+    text-transform: normal;
     font-size: 15px;
 	  margin-top: 0.8rem;
   }
@@ -449,7 +449,7 @@ body:after {
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
-  line-height: 1.2;
+  margin-bottom: 0;
 }
 
 .page h1{
@@ -458,7 +458,6 @@ body:after {
   font-weight: bold;
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
-  line-height: 1.2;
 }
 
 .author_title{
@@ -470,6 +469,7 @@ body:after {
 .post_date{
   text-align: left;
   color: #939aa1;
+  margin: 0 0 15px 0;
 }
 
 .cd-container a {
