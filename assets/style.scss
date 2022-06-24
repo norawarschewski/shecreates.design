@@ -393,7 +393,7 @@ nav {
   }
 
   .read-more:before {
-    content: "\023F0";
+    content: "\1F4D6";
     margin-right: 5px;
 }
 	
@@ -469,6 +469,11 @@ body:after {
   text-align: left;
   color: #939aa1;
   letter-spacing: 2px;
+}
+
+.post_date::before {
+  content: "\23F0";
+  margin-right: 5px;
 }
 
 .post_date{
